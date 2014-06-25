@@ -8,7 +8,7 @@ beta_12 = c(-1,0,0)
 beta_21 = c(-1,0,0)
 beta_22 = c(0,2,0)
 
-s = c(s0, s1, s2)
+s = rep(1, 3)
 
 for ( k in i) {
 	for ( l in k) {
