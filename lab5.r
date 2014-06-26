@@ -231,7 +231,7 @@
    # coeffs can even end-up with signs that are physically impossible.
    
    # The regression eqn is still OK to use for predictions. But, of course,
-   the predictions will be less certain as well.
+   # the predictions will be less certain as well.
 
    ############################################################### 
 
