@@ -1,6 +1,6 @@
 # this is for understanding the blockmodeling package in R
 
-n<-8 #if larger, the number of partitions increases dramaticaly,
+n<-8 #if larger, the number of partitions increases dramatically,
 	 # as does if we increase the number of clusters
 net<-matrix(NA,ncol=n,nrow=n)
 clu<-rep(1:2,times=c(3,5))
@@ -18,11 +18,9 @@ all.par<-lapply(apply(all.par,1,list),function(x)x[[1]])
 # to make a list out of the matrix
 
 #optimizing one partition
-res<-opt.par(M=net,
-clu=all.par[[sample(1:length(all.par),size=1)]],
-approach="ss", blocks="com")
+res<-opt.par(M=net, clu=all.par[[sample(1:length(all.par), 
+	size=1)]], approach="ss", blocks="com")
 plot(res) #Hopefully we get the original partition
-#debug()
 
 #optimizing 10 random partitions which with opt.these.par
 # res<-opt.these.par(M=net,
